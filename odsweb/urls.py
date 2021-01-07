@@ -24,4 +24,5 @@ urlpatterns = [
     path('runoob2/', views.runoob2),
     path('runoob_list/', views.runoob_list),
     path('car/', car.carlists),
+    path('get_article/', car.get_article),
 ]

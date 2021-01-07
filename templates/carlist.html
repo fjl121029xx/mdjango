@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>编号</th>
+        <th>名称</th>
+        <th>品牌</th>
+        <th>价格</th>
+        <th>类型</th>
+    </tr>
+    {% for car in carlists %}
+        <tr>
+            <td>{{ car.Id }}</td>
+            <td>{{ car.brand }}</td>
+            <td>{{ car.name }}</td>
+            <td>{{ car.price }}</td>
+            <td>{{ car.type }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from odsweb import views
+from odsweb import views, car
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('runoob/', views.runoob),
     path('runoob2/', views.runoob2),
     path('runoob_list/', views.runoob_list),
+    path('car/', car.carlists),
 ]

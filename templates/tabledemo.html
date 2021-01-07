@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="white-space:nowrap;width:100%; font-size:10px; border:solid; border-width:0px;" class="table">#}
+    <caption style="font-size:15px;font-weight:bold;color:#ffff66;background-color:#668899;">
+        Show Table
+    </caption>
+    <tr>
+        // show table head
+        <th bgcolor="#669900" style="color:white"> table head1</th>
+        <th bgcolor="#669900" style="color:white"> table head2</th>
+        <th bgcolor="#669900" style="color:white"> table head3</th>
+        ......
+    </tr>
+    <tr>
+        // show table data list
+        {% for dr in data_request %}   //get data list from django view
+            //show table data
+            <td align="left" valign="middle" bgcolor="#F5F5F5">{{ dr.table_data1 }}</td>
+            <td align="left" valign="middle" bgcolor="#F5F5F5">{{ dr.table_data2 }}</td>
+            <td align="left" valign="middle" bgcolor="#F5F5F5">{{ dr.table_data3 }}</td>
+            ......
+            </tr>
+        {% endfor %}
+</table>
+</body>
+</html>

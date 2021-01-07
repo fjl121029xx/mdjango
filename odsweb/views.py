@@ -6,6 +6,9 @@ __author__ = 'the king of north'
 from django.shortcuts import render
 
 
+# python manage.py runserver 0.0.0.0:8001
+
+
 def runoob(request):
     context = {}
     context['hello'] = 'Hello World!'

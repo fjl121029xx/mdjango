@@ -21,7 +21,9 @@ def get_article(request):
     else:
         page = 1
     print('PAGE 参数为：', page)
-    article_list = [1, 2, 3]
+    article_list = [{"article_id": 1, "article_title": "11", "name": "ll", "price": 1, "type": 1},
+                    {"article_id": 1, "article_title": "11", "name": "ll", "price": 1, "type": 1},
+                    {"article_id": 1, "article_title": "11", "name": "ll", "price": 1, "type": 1}]
     # 实例化一个分页组件，第一个参数是需要被分页的列表，第二个参数是每一个的item个数，比如这边指定每页个数为2
     paginator = Paginator(article_list, 2)
     # page方法，传入一个参数，表示第几页的列表，这边传入的page，是你在地址中写的参数
